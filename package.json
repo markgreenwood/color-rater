@@ -1,0 +1,46 @@
+{
+  "name": "color-rater",
+  "version": "1.0.0",
+  "description": "Color rater using React/Redux",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --inline",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markgreenwood/color-rater.git"
+  },
+  "keywords": [],
+  "author": "Mark Greenwood",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markgreenwood/color-rater/issues"
+  },
+  "homepage": "https://github.com/markgreenwood/color-rater#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.0",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
+    "css-loader": "^0.27.3",
+    "eslint": "^3.17.1",
+    "eslint-loader": "^1.6.3",
+    "eslint-plugin-react": "^6.10.3",
+    "html-webpack-plugin": "^2.28.0",
+    "style-loader": "^0.14.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "babel": {
+    "plugins": [
+      "transform-react-jsx"
+    ]
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "uuid": "^3.0.1"
+  }
+}
