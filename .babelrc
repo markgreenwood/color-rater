@@ -1,8 +1,9 @@
 {
-  "presets": [ "es2015", "stage-1", "react" ],
+  "presets": [
+    "env"
+  ],
   "plugins": [
-    "react-hot-loader/babel",
-    "transform-decorators-legacy",
-    "transform-class-properties"
+    "transform-object-rest-spread",
+    "transform-react-jsx"
   ]
 }
