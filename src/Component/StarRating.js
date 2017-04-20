@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import './Star.scss';
 
 const Star = ({ selected=false, onClick=f=>f }) => {
   return (

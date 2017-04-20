@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import './AddColorForm.scss';
 
 class AddColorForm extends Component {
   constructor(props) {

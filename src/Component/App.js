@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import uuidV4 from 'uuid/v4';
 import AddColorForm from './AddColorForm';
 import ColorList from './ColorList';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   constructor(props) {

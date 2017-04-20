@@ -1,5 +1,7 @@
 import React, { PropTypes } from 'react';
 import StarRating from './StarRating';
+import './ColorList.scss';
+import './Color.scss';
 
 const ColorList = ({colors=[], onRate=f=>f, onRemove=f=>f}) => {
   return (
