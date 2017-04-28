@@ -1,6 +1,6 @@
 import C from '../constants';
 
-const color = (state = {}, action) => {
+export const color = (state = {}, action) => {
   switch (action.type) {
   case C.ADD_COLOR:
     return {
@@ -18,7 +18,7 @@ const color = (state = {}, action) => {
   }
 };
 
-const colors = (state = [], action) => {
+export const colors = (state = [], action) => {
   switch (action.type) {
   case C.ADD_COLOR:
     return [
@@ -33,17 +33,11 @@ const colors = (state = [], action) => {
   }
 };
 
-const sort = (state = 'SORTED_BY_DATE', action) => {
+export const sort = (state = 'SORTED_BY_DATE', action) => {
   switch (action.type) {
   case C.SORT_COLORS:
     return action.sortBy;
   default:
     return state;
   }
-};
-
-module.exports = {
-  color,
-  colors,
-  sort
 };
