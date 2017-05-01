@@ -61,7 +61,7 @@ describe('colors reducer', () => {
       title: 'Test Teal',
       color: '#90C3D4',
       timestamp: new Date().toString()
-    };    
+    };
     deepFreeze(state);
     deepFreeze(action);
     const newState = colors(state, action);
@@ -103,7 +103,8 @@ describe('sort reducer', () => {
       type: C.SORT_COLORS,
       sortBy: 'SORT_BY_RATING'
     };
-    const newState = sort(state, action);
-    expect(newState).to.equal('SORT_BY_RATING');
+    deepFreeze(state);
+    deepFreeze(action);
+    expect(sort(state, action)).to.equal('SORT_BY_RATING');
   });
 });
