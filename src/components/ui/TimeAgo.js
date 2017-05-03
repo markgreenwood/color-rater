@@ -9,7 +9,7 @@ const TimeAgo = ({ timestamp }) => {
 };
 
 TimeAgo.propTypes = {
-  timestamp: PropTypes.number
+  timestamp: PropTypes.string
 };
 
 export default TimeAgo;

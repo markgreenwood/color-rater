@@ -30,7 +30,7 @@ Color.propTypes = {
   title: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   rating: PropTypes.number,
-  timestamp: PropTypes.number,
+  timestamp: PropTypes.string,
   onRemove: PropTypes.func,
   onRate: PropTypes.func
 };
