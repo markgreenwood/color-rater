@@ -1,4 +1,14 @@
-import storeFactory from '../../src/store/index';
+import storeFactory from '../../src/store';
+import { rateColor } from '../../src/actions';
+import jsdom from 'jsdom';
+import { expect } from 'chai';
+const { JSDOM } = jsdom;
+
+global.document = new JSDOM('<!doctype html><html><body></body></html>');
+global.window = document.defaultView;
+global.localStorage = { 'redux-store': false };
+global.console.groupCollapsed = () => {};
+global.console.groupEnd = () => {};
 
 describe('rateColor', () => {
   let store, colors = [
