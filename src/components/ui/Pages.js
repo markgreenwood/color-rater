@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
+import '../../../stylesheets/Menus.scss';
 
 export const Home = () =>
   <section className="home">
