@@ -2,14 +2,14 @@
 import React from 'react';
 import HomeIcon from 'react-icons/lib/fa/home';
 import { Link } from 'react-router';
-// import '../../../stylesheets/Page.scss';
+import '../../../stylesheets/Pages.scss';
 
 const selectedStyle = {
   backgroundColor: 'white',
   color: 'slategray'
 };
 
-const MainMenu = () => (
+export const MainMenu = () => (
   <nav className='main-menu'>
     <Link to='/'>
       <HomeIcon/>
@@ -29,11 +29,26 @@ const MainMenu = () => (
   </nav>
 );
 
-const Page = ({children}) => (
-  <div className="page">
-    <MainMenu/>
-    {children}
-  </div>
-);
-
-export default Page;
+export const AboutMenu = () =>
+  <div className="about-menu">
+    <li>
+      <Link to="/about" activeStyle={selectedStyle}>
+        [Company]
+      </Link>
+    </li>
+    <li>
+      <Link to="/about/history" activeStyle={selectedStyle}>
+        [History]
+      </Link>
+    </li>
+    <li>
+      <Link to="/about/services" activeStyle={selectedStyle}>
+        [Services]
+      </Link>
+    </li>
+    <li>
+      <Link to="/about/location" activeStyle={selectedStyle}>
+        [Location]
+      </Link>
+    </li>
+  </div>;

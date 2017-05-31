@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router';
+import { MainMenu, AboutMenu } from './Menus';
 import '../../../stylesheets/Menus.scss';
 
 export const Home = () =>
@@ -14,9 +15,10 @@ export const Home = () =>
     </div>
   </section>;
 
-export const About = () =>
+export const About = ({children}) =>
   <section className="about">
-    <h1>[About the Company]</h1>
+    <AboutMenu />
+    {children}
   </section>;
 
 export const Events = () =>
@@ -34,11 +36,34 @@ export const Contact = () =>
     <h1>[Contact Us]</h1>
   </section>;
 
+export const Company = () =>
+  <section className="company">
+    <h2>Our Company</h2>
+  </section>;
+
+export const History = () =>
+  <section className="history">
+    <h2>Our History</h2>
+  </section>;
+
+export const Services = () =>
+  <section className="services">
+    <h2>Our Services</h2>
+  </section>;
+
+export const Location = () =>
+  <section className="location">
+    <h2>Our Location</h2>
+  </section>;
+
 export const Whoops404 = ({ location }) =>
   <div className="whoops-404">
     <h1>Resource not found at '{location.pathname}'</h1>
   </div>;
 
-Whoops404.propTypes = {
-  location: PropTypes.object
-};
+export const Page = ({children}) => (
+  <div className="page">
+    <MainMenu/>
+    {children}
+  </div>
+);
